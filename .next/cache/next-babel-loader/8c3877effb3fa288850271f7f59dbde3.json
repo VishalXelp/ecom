@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { Component } from 'react'; // import TopPanel from './TopPanel';\n\nimport TopHeader from './TopHeader';\nimport MegaMenu from './MegaMenu';\n\nfunction Navbar() {\n  return __jsx(React.Fragment, null, __jsx(MegaMenu, null));\n}\n\nexport default Navbar;","map":null,"metadata":{},"sourceType":"module"}
