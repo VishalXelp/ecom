@@ -94,101 +94,10 @@ class TrendingProducts extends Component {
                     </div>
 
                     <div className="row">
-
-                        <ProductsCard/>
-
-
-
-
- {/*
-                    {this.state.display ? <OwlCarousel 
-                        className="trending-products-slides owl-carousel owl-theme"
-                        {...options}
-                    >
-                        {products.map((data, idx) => (
-                            <div className="col-lg-12 col-md-12" key={idx}>
-                                <div className="single-product-box">
-                                    <div className="product-image">
-                                        <Link href="/product-details">
-                                            <a>
-                                                <img src={data.image} alt="image" />
-                                                <img src={data.imageHover} alt="image" />
-                                            </a>
-                                        </Link>
-
-                                        <ul>
-                                            <li>
-                                                <Link href="#">
-                                                    <a 
-                                                        data-tip="Quick View" 
-                                                        data-place="left" 
-                                                        onClick={e => {
-                                                                e.preventDefault(); 
-                                                                this.openModal();
-                                                                this.handleModalData(data.quickView,data.price,data.id)
-                                                            }
-                                                        }
-                                                    >
-                                                        <i className="far fa-eye"></i>
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a data-tip="Add to Wishlist" data-place="left">
-                                                        <i className="far fa-heart"></i>
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <a data-tip="Add to Compare" data-place="left">
-                                                        <i className="fas fa-sync"></i>
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="product-content">
-                                        <h3>
-                                            <Link href="/product-details">
-                                                <a>{data.title}</a>
-                                            </Link>
-                                        </h3>
-
-                                        <div className="product-price">
-                                            <span className="new-price">${data.price}</span>
-                                        </div>
-
-                                        <div className="rating">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="far fa-star"></i>
-                                        </div>
-                                        <Link href="#">
-                                            <a 
-                                                className="btn btn-light"
-                                                onClick={(e) => {
-                                                    e.preventDefault(); this.handleAddToCart(data.id)
-                                                }}
-                                            >
-                                                Add to Cart
-                                            </a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        
-                        </OwlCarousel> : ''}
-                         */}
-
-                         
+                        <ProductsCard/>                         
                     </div>
                 </div>
+                
                 { modalOpen ? <QuickView 
                     closeModal={this.closeModal} 
                     idd={this.state.idd}

@@ -12,7 +12,7 @@ import Footer from '../../components/Layout/Footer';
 // import TrendingProducts from "../../components/shop-style-three/TrendingProducts";
 import CategoryList from "../../components/shop-style-three/CategoryList";
 import Error from "../_error";
-
+import ProductsCard from "../../components/product-card/ProductsCard"
 
 function ProductScreen() {
     const router = useRouter();
@@ -29,13 +29,13 @@ function ProductScreen() {
           <Error/>
       );
     }
-  
+  // console.log({products});
   
     return( <div>
     <React.Fragment>
                   <Navbar />
   
-                  {console.log(product)}
+              
                   <CategoryList product={product} />
   
                   <Footer />
